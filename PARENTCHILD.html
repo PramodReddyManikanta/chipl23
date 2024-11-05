@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #parent{
+            background-color: rgb(233, 110, 110);
+            display: flex;
+            margin: 5px;
+            flex-direction:row;
+            /* flex-wrap: wrap; */
+            justify-content: center;
+            align-items: flex-start;
+            height: 100px;
+    
+
+        }
+        *{
+            margin: 0;
+        }
+
+        #parent>div{
+            background-color: yellow;
+            margin: 3px;
+            padding: 20px;
+
+        }
+        #one{
+            flex-grow: 3;
+            order: 5;
+        }
+        #two{
+            order: 2;
+            /* align-items: flex-end; */
+            align-self: flex-end;
+        }
+    </style>
+</head>
+<body>
+    <div id="parent" >
+            <div id="one">One</div>
+            <div id="two">two</div>
+            <div id="three">three</div>
+            <div id="four">four</div>
+            <div id="five">five</div>
+    </div>
+</body>
+</html>
